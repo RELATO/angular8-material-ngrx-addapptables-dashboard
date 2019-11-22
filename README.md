@@ -42,6 +42,23 @@ or
 ng build --prod
 ```
 
+## Docker image build
+```
+docker build --no-cache -t addapptable/ng-template .
+```
+and  run docker container
+```
+docker run -it -p 80:80 --rm addapptable/ng-template
+```
+### Docker References
+
+https://itnext.io/dockerizing-an-angular-app-with-karma-and-protractor-containers-3b4c53ea807f
+
+and 
+
+https://mherman.org/blog/dockerizing-an-angular-app/
+
+
 ### Directory Structure
 Addapptables has a fairly simple directory structure. All source code that you will need stays inside the /src folder. Once you build your app, a /dist folder will appear at the root which will contain the built app. You can simply upload the contents of it to your server to start running your app.
 
