@@ -1,0 +1,37 @@
+<addapptable-card>
+  <addapptable-card-header>
+    <addapptable-card-header-oval>
+      <addapptable-card-title>
+        <mat-icon matSuffix>library_books</mat-icon>
+        <span>{{'documentation.components.alert.title' | translate}}</span>
+      </addapptable-card-title>
+    </addapptable-card-header-oval>
+  </addapptable-card-header>
+  <addapptable-card-body>
+    <div class="addapptable-group">
+      <h3 class="addapptable-title text-accent">
+        {{ 'documentation.components.alert.title' | translate }}
+      </h3>
+      <p>{{ 'documentation.components.alert.description' | translate }}.</p>
+    </div>
+    <div class="addapptable-group">
+      <h3 class="addapptable-title text-accent">
+        {{ 'documentation.components.alert.howToUse' | translate }}
+      </h3>
+      <ul>
+        <li>
+          <p>{{'documentation.components.alert.stepByStep.importModule' | translate}}</p>
+          <markdown src="/assets/code/documentation/import-alert-module.ts"></markdown>
+        </li>
+        <li>
+          <p>{{'documentation.components.alert.stepByStep.howToUse' | translate}}</p>
+          <markdown src="/assets/code/documentation/how-to-use-alert.ts"></markdown>
+        </li>
+        <li>
+          <p>{{'documentation.components.alert.stepByStep.variation' | translate}}</p>
+          <markdown src="/assets/code/documentation/alert-enum.ts"></markdown>
+        </li>
+      </ul>
+    </div>
+  </addapptable-card-body>
+</addapptable-card>

@@ -1,0 +1,10 @@
+.heading {
+    display: table;
+    margin-bottom: 28px;
+    & >:first-child{
+        width: 300px;
+    }
+    &> * {
+        display: table-cell;
+    }
+}

@@ -1,0 +1,29 @@
+<addapptable-card>
+  <addapptable-card-body>
+    <div class="invoice-client">
+      <div class="row">
+        <div class="col-6 invoice-client-info">
+          <span class="text-primary">
+            {{'invoice.client' | translate}}
+          </span>
+          <span>Teo GL</span>
+          <span class="text-primary">
+            {{'invoice.identification' | translate}}
+          </span>
+          <span>123456789</span>
+        </div>
+        <div class="col-6 invoice-client-info">
+          <span class="text-primary">
+            {{'invoice.dateOfElaboration' | translate}}
+          </span>
+          <span>{{date | date: 'dd/MM/yyyy h:mm a'}}</span>
+          <span class="text-primary">
+            {{'invoice.paymentMethod' | translate}}
+          </span>
+          <span>Contado</span>
+        </div>
+      </div>
+
+    </div>
+  </addapptable-card-body>
+</addapptable-card>

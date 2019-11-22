@@ -1,0 +1,34 @@
+@mixin invoice-header-content() {
+    &-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        &-column{
+            display: flex;
+            align-items: center;
+        }
+    }
+    &-title {
+        justify-content: start;
+        display: grid;
+        &-content-img {
+            justify-content: center;
+            display: grid;
+        }
+        &-img {
+            width: 113px;
+        }
+    }
+}
+
+@mixin invoice-header {
+    &-header {
+        @include invoice-header-content();
+        &-title {
+            justify-content: center;
+        }
+        @include media-breakpoint-up(lg) {
+            @include invoice-header-content();
+        }
+    }
+}

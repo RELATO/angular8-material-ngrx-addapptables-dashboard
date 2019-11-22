@@ -1,0 +1,16 @@
+$color: #828282;
+
+.toolbar {
+    color: $color !important;
+    > div {
+        flex: 1;
+    }
+    > div addapptable-colapse-button-mobile{
+        margin-right: 5px;
+    }
+    &-actions{
+        display: flex;
+        flex-direction: row;
+        flex: 0;
+    }
+}

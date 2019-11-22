@@ -1,0 +1,15 @@
+<addapptable-card>
+  <addapptable-card-header>
+    <addapptable-card-header-oval>
+      <addapptable-card-title>
+        <mat-icon matSuffix>arrow_downward</mat-icon>
+        <span>{{'draganddrop.sorting' | translate}}</span>
+      </addapptable-card-title>
+    </addapptable-card-header-oval>
+  </addapptable-card-header>
+  <addapptable-card-body>
+    <div cdkDropList class="dragdrop-list" (cdkDropListDropped)="drop($event)">
+      <div class="dragdrop-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
+    </div>
+  </addapptable-card-body>
+</addapptable-card>

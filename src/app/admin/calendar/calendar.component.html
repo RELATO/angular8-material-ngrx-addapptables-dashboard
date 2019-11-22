@@ -1,0 +1,77 @@
+<div class="row">
+  <div class="col-12 calendar-actions d-flex justify-content-between">
+    <!-- ACTIONS -->
+    <div class="calendar-view">
+      <!-- TODAY -->
+      <button mat-icon-button mwlCalendarToday [(viewDate)]="viewDate" (viewDateChange)="selectedDay = {date:$event}"
+        aria-label="Today" [matTooltip]="'calendar.today' | translate">
+        <mat-icon>today</mat-icon>
+      </button>
+      <!-- /TODAY -->
+
+      <!-- VIEW DAY -->
+      <button [ngClass]="{'calendar-button-select': view === 'day'}" mat-icon-button (click)="view='day'" aria-label="Day"
+        [matTooltip]="'calendar.day' | translate">
+        <mat-icon>view_day</mat-icon>
+      </button>
+      <!--/ VIEW DAY -->
+
+      <!-- VIEW WEEK -->
+      <button [ngClass]="{'calendar-button-select': view === 'week'}" mat-icon-button (click)="view='week'" aria-label="Week"
+        [matTooltip]="'calendar.week' | translate">
+        <mat-icon>view_week</mat-icon>
+      </button>
+      <!-- / VIEW WEEK -->
+
+      <!-- VIEW MONTH -->
+      <button [ngClass]="{'calendar-button-select': view === 'month'}" mat-icon-button (click)="view='month'"
+        aria-label="Month" [matTooltip]="'calendar.month' | translate">
+        <mat-icon>view_module</mat-icon>
+      </button>
+      <!-- / VIEW MONTH -->
+
+    </div>
+    <!-- / ACTIONS -->
+
+    <!-- ACTION NEXT AND PREVIOUS -->
+    <div class="calendar-next-previous">
+      <!-- VIEW PREVIOUS -->
+      <button mat-icon-button class="arrow" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate"
+        (viewDateChange)="selectedDay = {date:$event}" aria-label="Previous">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+      <!-- / VIEW PREVIOUS -->
+
+      <!-- TITLE -->
+      <div class="title">
+        {{ viewDate | calendarDate:(view + 'ViewTitle'): locale }}
+      </div>
+      <!--/ TITLE -->
+
+      <!--VEW NEXT -->
+      <button mat-icon-button class="arrow" mwlCalendarNextView [view]="view" [(viewDate)]="viewDate" (viewDateChange)="selectedDay = {date:$event}"
+        aria-label="Next">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+      <!--/ VEW NEXT -->
+
+    </div>
+    <!-- / ACTION NEXT AND PREVIOUS -->
+
+  </div>
+
+  <!--CALENDAR -->
+  <div class="col-12 calendar" [ngSwitch]="view">
+    <mwl-calendar-month-view [locale]="locale" *ngSwitchCase="'month'" [viewDate]="viewDate" [events]="events$ | async"
+      [activeDayIsOpen]="activeDayIsOpen" [refresh]="refresh" (dayClicked)="dayClicked($event.day)" (eventTimesChanged)="eventTimesChanged($event)">
+    </mwl-calendar-month-view>
+    <mwl-calendar-week-view [locale]="locale" *ngSwitchCase="'week'" [viewDate]="viewDate" (viewDateChange)="selectedDay = {date:$event}"
+      [events]="events$ | async">
+    </mwl-calendar-week-view>
+    <mwl-calendar-day-view [locale]="locale" *ngSwitchCase="'day'" [viewDate]="viewDate" (viewDateChange)="selectedDay = {date:$event}"
+      [events]="events$ | async">
+    </mwl-calendar-day-view>
+  </div>
+  <!-- / CALENDAR -->
+
+</div>

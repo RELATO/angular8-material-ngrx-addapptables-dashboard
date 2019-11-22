@@ -1,0 +1,257 @@
+{
+    "general": {
+        "required": "El campo es requerido",
+        "isEmail": "El campo {{field}} no tiene el formato correcto. Ejemplo: ejemplo@addapptables.com",
+        "maxLength": "El campo no puede tener más de {{x}} caracteres",
+        "option": "opción",
+        "ok": "Ok",
+        "cancel": "Cancelar",
+        "actions": "Acciones",
+        "save": "Guardar",
+        "close": "Cerrar"
+    },
+    "auth": {
+        "login": "Iniciar sesión",
+        "email": "Correo",
+        "password": "Contraseña",
+        "register": "Haz parte de Addapptables",
+        "names": "Nombres",
+        "surnames": "Apellidos",
+        "birthday": "Fecha de nacimiento",
+        "name": "Nombres",
+        "repeatPassword": "Repetir contraseña",
+        "remember": "Recordar",
+        "forgotPassword": "¿Olvidaste tu contraseña?"
+    },
+    "menu": {
+        "dashboard": "Tablero",
+        "forms": "Formularios",
+        "calendar": "Calendario",
+        "form": {
+            "basicForm": "Formulario básico",
+            "validationForm": "Formulario con validaciones",
+            "wizardForm": "Formulario paso a paso"
+        },
+        "components": {
+            "title": "Componentes",
+            "buttons": "Botones",
+            "cards": "Contenedores",
+            "modalsAlerts": "Modales y alertas",
+            "notifiers": "Notificaciones",
+            "panels": "Páneles"
+        },
+        "tables": {
+            "title": "Tablas",
+            "simpleTable": "Tablas sencillas",
+            "paginationTable": "Tablas con paginación"
+        },
+        "typography": "Tipografía",
+        "dragAndDrop": "Arrastrar y soltar",
+        "timeLine": "Línea de tiempo",
+        "pages": {
+            "title": "Páginas",
+            "login": "Inicio de sesión",
+            "login2": "Inicio de sesión 2",
+            "register": "Registrarse"
+        },
+        "documentation": {
+            "title": "Documentación",
+            "introduction": "Introducción",
+            "installation": "Instalación"
+        },
+        "ecommerce": "Comercio",
+        "invoice": "Factura"
+    },
+    "translate": {
+        "english": "Inglés",
+        "spanish": "Español"
+    },
+    "register": {
+        "title": "Aprende, comparte y haz parte de la mejor red social de aprendizaje del mundo"
+    },
+    "report": {
+        "cost": "Costos",
+        "information": "Información",
+        "subtotal": "Subtotal",
+        "total": "Total",
+        "earning": "Ganancia",
+        "week": "semana",
+        "ofWeek": "Reportes de la semana",
+        "result": {
+            "cost": "Resultados de los costos",
+            "subtotal": "Subtotales",
+            "total": "Totales",
+            "earning": "Ganancias del día"
+        }
+    },
+    "form": {
+        "general": {
+            "food": "Comida favorita",
+            "comment": "Escribe un comentario",
+            "checked": "Comprobado",
+            "indeterminate": "Indeterminado",
+            "autocomplete": "Autocompletar",
+            "someControls": "Algunos controles",
+            "dropdown": "Lista desplegable",
+            "datePicker": "Control de fecha"
+        },
+        "wizard": {
+            "title": "Formulario paso a paso"
+        },
+        "vertical": {
+            "title": "Formulario vertical"
+        },
+        "horizontal": {
+            "title": "Formulario horizontal"
+        }
+    },
+    "card": {
+        "simple": "Contenedor sencillo",
+        "oval": "Contenedor con óvalo"
+    },
+    "alert": {
+        "success": "Alerta de éxito",
+        "info": "Alerta de información",
+        "warning": "Alerta de advertencia",
+        "error": "Alerta de error",
+        "confirmation": "Alerta de confirmación",
+        "customButtons": "Botones personalizados",
+        "simple": "Alerta sencilla"
+    },
+    "notifier": {
+        "success": "Notificación de éxito",
+        "info": "Notificación de información",
+        "warning": "Notificación de advertencia",
+        "error": "Notificación de error",
+        "successCustom": "Notificación customizada de éxito",
+        "infoCustom": "Notificación customizada de información"
+    },
+    "panel": {
+        "tabs": "Pestañas",
+        "basicPanel": "Panel básico",
+        "custom": "Panel personalizado"
+    },
+    "table": {
+        "simple": {
+            "primary": "Tabla sencilla color primario",
+            "accent": "Tabla sencilla color acentos",
+            "default": "Tabla por defecto"
+        },
+        "extendedPagination": "Tabla con varias funciones de paginación"
+    },
+    "github": {
+        "issues": "Reportes de Github"
+    },
+    "calendar": {
+        "today": "Día actual",
+        "day": "Día",
+        "week": "Semana",
+        "month": "Mes"
+    },
+    "typography": {
+        "title": "Tipografía",
+        "material": "Clases de angular material"
+    },
+    "draganddrop": {
+        "sorting": "Ordenar",
+        "title": "Arrastrar y soltar"
+    },
+    "timeLine": "Línea de tiempo",
+    "profile": {
+        "closeSession": "Cerrar sesión"
+    },
+    "login": {
+        "title": "Iniciar sesión",
+        "email": "Correo electrónico",
+        "password": "Contraseña",
+        "remember": "Recordar",
+        "forgotYourPassword": "¿Olvidaste tu contraseña?",
+        "or": "O también"
+    },
+    "documentation": {
+        "title": {
+            "whatIsIt": "¿Qué es Addapptables?",
+            "dependencies": "Dependencias",
+            "prerequisites": "Prerequisitos"
+        },
+        "installation": "Instalación",
+        "introduction": "Introducción",
+        "whatIsIt": "Addapptables es una plantilla administrativa totalmente escrita en Angular.",
+        "dependencies": "Las dependencias de la plantilla son las siguientes:",
+        "angular": "es la base de addapptables",
+        "angularMaterial": "es la base de la UI de addapptables. Esta librería está basada en varios componenentes mantenidos por google.",
+        "redux": "La plantilla addapptables utiliza como base el patrón",
+        "prerequisites": {
+            "description": "Antes de comenzar debemos instalar algunas dependencias para que nuestra plantilla funcione correctamente",
+            "angularCli": "La plantilla está realiza con la cli de angular, puede consultar directamente en la documentación de",
+            "nodejs": "Para el proceso de desarrollo necesitaremos tener instalado",
+            "yarn": "Las dependencias del proyecto han sido instaladas con yarn, puede descargar este gestor de paquetes desde la página oficial haciendo click",
+            "download": {
+                "nodejs": "Descargue e instale la última versión LTS de Nodejs",
+                "angularcli": "Para instalar la cli, abra su aplicación de consola (terminal) y ejecute el siguiente comando:"
+            },
+            "run": "Para correr la aplicación debemos ejecutar el siguiente comando"
+        },
+        "components": {
+            "title": "Componentes",
+            "card": {
+                "title": "Contenedor",
+                "description": "Los contenedores es un componente personalizado para crear contenido dentro de una página",
+                "howToUse": "¿Cómo utilizar los contenedores?",
+                "stepByStep": {
+                    "importModule": "Importar el módulo de contenedor de la siguiente manera",
+                    "second": "Utilizar la siguiente sintaxis dentro del html para tener un contenedor",
+                    "variationCard": "También podemos utilizar contenedores sencillos por ejemplo:"
+                }
+            },
+            "alert": {
+                "title": "Alertas",
+                "description": "Las alertas es un componente personalizado que utiliza los estilos de SweetAlert2 acompañado de los modales de material",
+                "howToUse": "¿Cómo utilizar las alertas?",
+                "stepByStep": {
+                    "importModule": "Importar el módulo alertas en el módulo principal de la aplicación de la siguiente manera",
+                    "importModuleInChild": "Importar el módulo de alertas en un módulo hijo",
+                    "howToUse": "Utilizar las alertas en los componentes de la siguiente manera",
+                    "variation": "Puedes utilizar las alertas de varias maneras cambiando el valor de la enumeración de la siguiente:"
+                }
+            },
+            "notifier": {
+                "title": "Notificaciones",
+                "description": "Las notificaciones es un componente personalizado para mostrar mensajes dentro de la aplicación",
+                "howToUse": "¿Cómo utilizar las notificaciones?",
+                "stepByStep": {
+                    "importModule": "Importar el módulo notificaciones en el módulo principal de la aplicación de la siguiente manera",
+                    "importModuleInChild": "Importar el módulo de alertas en un módulo hijo",
+                    "howToUse": "Utilizar las notificaciones en los componentes de la siguiente manera",
+                    "variation": "Puedes utilizar las notificaciones de varias maneras cambiando el valor de la enumeración de la siguiente:"
+                }
+            }
+        }
+    },
+    "invoice": {
+        "company": "Compañía",
+        "nit": "Nit",
+        "branchoffice": "Sede",
+        "seller": "Vendedor",
+        "consecutive": "Consecutivo",
+        "client": "Cliente",
+        "identification": "Identificación",
+        "dateOfElaboration": "Fecha de elaboración",
+        "paymentMethod": "Método de pago",
+        "totalIva": "Total iva",
+        "subTotal": "Subtotal",
+        "total": "Total",
+        "header": "Factura de venta"
+    },
+    "product": {
+        "title": "Productos",
+        "create": "Nuevo producto",
+        "id": "Id",
+        "name": "Nombre",
+        "category": "Categoría",
+        "price": "Precio",
+        "quantity": "Cantidad",
+        "active": "Activo",
+        "image": "Imagen"
+    }
+}

@@ -1,0 +1,39 @@
+
+:host {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100vh;
+    min-width: 0;
+}
+
+.layout{
+    height: inherit;
+    &-footer {
+        background-color: #0000002e;
+        padding: 1em;
+        @media print{
+            display: none;
+        }
+    }
+    &-menu {
+        height: inherit;
+    }
+    &-main {
+        flex: 1;
+        height: 100%;
+    }
+    &-col {
+        position: relative;
+        z-index: 1;
+        padding: 0;
+        &-navbar {
+            flex: 0 0 70px;
+            width: 100%;
+        }
+        &-router{
+            flex: 1;
+        }
+    }
+}

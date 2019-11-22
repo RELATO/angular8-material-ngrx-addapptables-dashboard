@@ -1,0 +1,52 @@
+<addapptable-card>
+  <!-- HEADER -->
+  <addapptable-card-header>
+    <addapptable-card-header-oval>
+      <addapptable-card-title>
+        <mat-icon matSuffix>view_compact</mat-icon>
+        <span>{{'panel.basicPanel' | translate}}</span>
+      </addapptable-card-title>
+    </addapptable-card-header-oval>
+  </addapptable-card-header>
+  <!-- / HEADER -->
+
+  <!-- BODY -->
+  <addapptable-card-body>
+    <mat-accordion>
+      <!-- EXPANSION PANEL -->
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Personal data
+          </mat-panel-title>
+          <mat-panel-description>
+            Type your name and age
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-form-field>
+          <input matInput placeholder="First name">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Age">
+        </mat-form-field>
+      </mat-expansion-panel>
+      <!-- / EXPANSION PANEL -->
+
+      <!-- EXPANSION PANEL -->
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Self aware panel
+          </mat-panel-title>
+          <mat-panel-description>
+            Currently I am
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+      <!-- /EXPANSION PANEL -->
+
+    </mat-accordion>
+  </addapptable-card-body>
+  <!-- / BODY -->
+</addapptable-card>

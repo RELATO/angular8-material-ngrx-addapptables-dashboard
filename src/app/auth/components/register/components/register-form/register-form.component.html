@@ -1,0 +1,48 @@
+<form [formGroup]="form" class="form-full-width" autocomplete="off">
+  <!-- NAME FIELD -->
+  <mat-form-field appearance="outline">
+    <mat-label>{{'auth.name' | translate}}</mat-label>
+    <input matInput type="text" formControlName="name">
+    <mat-icon matSuffix>people</mat-icon>
+  </mat-form-field>
+  <!-- / NAME FIELD -->
+
+  <!-- EMAIL FIELD -->
+  <mat-form-field appearance="outline">
+    <mat-label>{{'auth.email' | translate}}</mat-label>
+    <input matInput type="email" formControlName="email">
+    <mat-icon matSuffix>email</mat-icon>
+  </mat-form-field>
+  <!-- / EMAIL FIELD -->
+
+  <!-- PASSWORD FIELD -->
+  <mat-form-field appearance="outline">
+    <mat-label>{{'auth.password' | translate}}</mat-label>
+    <input matInput type="password" formControlName="password">
+    <mat-icon matSuffix>lock</mat-icon>
+  </mat-form-field>
+  <!-- / PASSWORD FIELD -->
+
+  <!-- REPEAT PASSWORD FIELD -->
+  <mat-form-field appearance="outline">
+    <mat-label>{{'auth.repeatPassword' | translate}}</mat-label>
+    <input matInput type="password" formControlName="passwordConfirm">
+    <mat-icon matSuffix>lock</mat-icon>
+  </mat-form-field>
+  <!-- / REPEAT PASSWORD FIELD -->
+
+  <mat-checkbox formControlName="termAndConditions">I read and accept terms and conditions</mat-checkbox>
+
+  <!-- ACTION REGISTER -->
+  <button mat-raised-button color="primary" [disabled]="!form.valid" class="register-button">
+    {{ "auth.register" | translate }}
+  </button>
+  <!-- / ACTION REGISTER -->
+
+  <div class="register-already-have-account">
+    <span>
+      Already have an account?
+    </span>
+    <a [routerLink]="['/']">Login</a>
+  </div>
+</form>

@@ -1,0 +1,24 @@
+  <ng-sidebar-container>
+
+    <!-- A sidebar -->
+    <ng-sidebar sidebarClass="configuration-sidebar" [(opened)]="_opened" position="right" [closeOnClickOutside]="true">
+        <p>Configuration</p>
+        <hr>
+        <div class="group">
+          <h2>Color theme</h2>
+          <mat-radio-group class="group-radio" [(ngModel)]="theme" (ngModelChange)="changeTheme($event)">
+            <mat-radio-button *ngFor="let theme of themes" [value]="theme">
+              {{theme}}
+            </mat-radio-button>
+          </mat-radio-group>
+        </div>
+    </ng-sidebar>
+
+    <!-- Page content -->
+    <div ng-sidebar-content>
+      <button type="button" mat-raised-button class="mat-elevation-z3 configuration-button" color="accent" (click)="toggleSidebar()">
+        <i class="material-icons">build</i>
+      </button>
+    </div>
+
+  </ng-sidebar-container>

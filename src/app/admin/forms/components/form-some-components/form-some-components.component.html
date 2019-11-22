@@ -1,0 +1,36 @@
+<addapptable-card>
+  <addapptable-card-header>
+    <addapptable-card-header-oval>
+      <addapptable-card-title>
+        <mat-icon matSuffix>done_all</mat-icon>
+        <span>{{'form.general.someControls' | translate}}</span>
+      </addapptable-card-title>
+    </addapptable-card-header-oval>
+  </addapptable-card-header>
+  <addapptable-card-body>
+    <form class="form-full-width">
+      <mat-form-field>
+        <input matInput [placeholder]="'form.general.food' | translate" value="Sushi">
+      </mat-form-field>
+      <mat-form-field>
+        <textarea matInput [placeholder]="'form.general.comment' | translate"></textarea>
+      </mat-form-field>
+      <app-autocomplete></app-autocomplete>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" [placeholder]="'form.general.datePicker' | translate" (focus)="picker.open()"
+          (click)="picker.open()">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <app-dropdown></app-dropdown>
+      <mat-radio-group>
+        <mat-radio-button value="1">{{'general.option' | translate}} 1</mat-radio-button>
+        <mat-radio-button value="2">{{'general.option' | translate}} 2</mat-radio-button>
+      </mat-radio-group>
+      <section class="form-checkbox">
+        <mat-checkbox [checked]="true">{{'form.general.checked' | translate}}</mat-checkbox>
+        <mat-checkbox>{{'form.general.indeterminate' | translate}}</mat-checkbox>
+      </section>
+    </form>
+  </addapptable-card-body>
+</addapptable-card>

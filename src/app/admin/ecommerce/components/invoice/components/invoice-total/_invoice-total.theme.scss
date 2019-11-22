@@ -1,0 +1,7 @@
+@mixin invoice-total {
+    &-total {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+}

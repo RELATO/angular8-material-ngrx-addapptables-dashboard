@@ -1,0 +1,52 @@
+<form [formGroup]="form" class="login-form">
+  <!-- EMAIL FIELD -->
+  <mat-form-field class="login-input" appearance="outline">
+    <mat-label>{{'auth.email' | translate}}</mat-label>
+    <input matInput type="email" formControlName="email">
+    <mat-icon matSuffix>email</mat-icon>
+  </mat-form-field>
+  <!-- / EMAIL FIELD -->
+
+  <!-- PASSWORD FIELD -->
+  <mat-form-field class="login-input" appearance="outline">
+    <mat-label>{{'auth.password' | translate}}</mat-label>
+    <input matInput type="password" [placeholder]="'auth.password' | translate" formControlName="password">
+    <mat-icon matSuffix>lock</mat-icon>
+  </mat-form-field>
+  <!-- / PASSWORD FIELD -->
+
+  <!-- REMEMBER FIELD -->
+  <div class="login-remember">
+    <mat-checkbox formControlName="remember">{{ 'auth.remember' | translate }}</mat-checkbox>
+    <a [routerLink]="['/']">{{ 'auth.forgotPassword' | translate}}</a>
+  </div>
+  <!-- / REMEMBER FIELD -->
+
+  <!-- ACTION LOGIN -->
+  <button mat-button color="primary" (click)="login()" [disabled]="!form.valid">
+    {{ "auth.login" | translate }}
+  </button>
+  <!-- / ACTION LOGIN -->
+
+  <!-- LOGIN WITH EMAIL ANG FACEBOOK -->
+  <div class="login-separator">
+    <span class="login-separator-text">
+      {{'login.or' | translate}}
+    </span>
+  </div>
+  <div class="login-other-buttons">
+    <button type="submit" mat-raised-button class="login-google">Google</button>
+    <button type="submit" mat-raised-button class="login-facebook">Facebook</button>
+  </div>
+  <!-- / LOGIN WITH EMAIL ANG FACEBOOK -->
+
+  <!-- OPTION REGISTER -->
+  <div class="login-create-account">
+    <span>
+      Don't have an account?
+    </span>
+    <a [routerLink]="['/register']">Create an account</a>
+  </div>
+  <!-- / OPTION REGISTER -->
+
+</form>

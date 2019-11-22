@@ -1,0 +1,38 @@
+<addapptable-card>
+  <addapptable-card-header>
+    <addapptable-card-header-oval>
+      <addapptable-card-title>
+        <mat-icon matSuffix>library_books</mat-icon>
+        <span>{{'documentation.components.card.title' | translate}}</span>
+      </addapptable-card-title>
+    </addapptable-card-header-oval>
+  </addapptable-card-header>
+  <addapptable-card-body>
+    <div class="addapptable-group">
+      <h3 class="addapptable-title text-accent">
+        {{ 'documentation.components.card.title' | translate }}
+      </h3>
+      <p>{{ 'documentation.components.card.description' | translate }}.</p>
+    </div>
+    <div class="addapptable-group">
+      <h3 class="addapptable-title text-accent">
+        {{ 'documentation.components.card.howToUse' | translate }}
+      </h3>
+      <ul>
+        <li>
+          <p>{{'documentation.components.card.stepByStep.importModule' | translate}}</p>
+          <markdown src="/assets/code/documentation/import-card-module.ts"></markdown>
+        </li>
+        <li>
+          <p>{{'documentation.components.card.stepByStep.second' | translate}}</p>
+          <markdown src="/assets/code/documentation/html/card.html"></markdown>
+        </li>
+        <li>
+          <p>{{'documentation.components.card.stepByStep.variationCard' | translate}}</p>
+          <markdown src="/assets/code/documentation/html/simple-card.html"></markdown>
+        </li>
+      </ul>
+    </div>
+
+  </addapptable-card-body>
+</addapptable-card>

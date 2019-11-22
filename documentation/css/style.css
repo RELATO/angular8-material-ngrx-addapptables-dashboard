@@ -1,0 +1,106 @@
+/* Start Main */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+body {font-family: 'Poppins', sans-serif;}
+
+h1,h2,h3,h4,h5,h6 {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #000;
+}
+
+p {font-size: 15px;}
+
+img {
+  margin: 20px 0;
+  border: 2px solid #007bc3;
+}
+
+a,
+a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: #007bc3;
+}
+
+a:focus {outline: none;}
+
+/* End Main*/
+
+/* Start SideBar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100vh;
+  background-color: #066155;
+  border-radius: 0;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar .sidebar-header {
+  padding: 20px 10px;
+  background-color: #00695c;
+  text-align: center;
+}
+
+.sidebar .sidebar-header h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+.sidebar .nav li a {
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.sidebar .nav li.active a,
+.sidebar .nav li a:hover {
+  background: -webkit-linear-gradient(right, #2eb8b7, #007bc3);
+  background: -o-linear-gradient(right, #2eb8b7, #007bc3);
+  background: linear-gradient(to left, #2eb8b7, #007bc3);
+}
+
+.sidebar .nav li a:focus {background-color: transparent;}
+
+/* End SideBar */
+
+/* Start Content */
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75%;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.content section {
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+.content section:nth-child(even) {border: 2px solid #1b1a1a;}
+.content section:nth-child(odd) {border: 2px dashed #1b1a1a;}
+
+.content #resources ul li {padding: 6px 0;}
+
+/* End Content */
+
+/* Start Media */
+
+@media (max-width: 768px) {
+
+  .sidebar {left: -25%;}
+  .content {width: 100%;}
+
+}
+
+/* End Media */

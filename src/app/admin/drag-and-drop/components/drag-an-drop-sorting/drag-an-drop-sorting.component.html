@@ -1,0 +1,32 @@
+<addapptable-card>
+  <addapptable-card-header>
+    <addapptable-card-header-oval>
+      <addapptable-card-title>
+        <mat-icon matSuffix>drag_indicator</mat-icon>
+        <span>{{'draganddrop.title' | translate}}</span>
+      </addapptable-card-title>
+    </addapptable-card-header-oval>
+  </addapptable-card-header>
+  <addapptable-card-body>
+    <div class="row">
+      <div class="col-6">
+        <div class="dragdrop-container">
+          <span class="mat-title">To do</span>
+          <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="todo" [cdkDropListConnectedTo]="[doneList]" class="dragdrop-list"
+            (cdkDropListDropped)="drop($event)">
+            <div class="dragdrop-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="dragdrop-container">
+          <span class="mat-title">Done</span>
+          <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="done" [cdkDropListConnectedTo]="[todoList]" class="dragdrop-list"
+            (cdkDropListDropped)="drop($event)">
+            <div class="dragdrop-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </addapptable-card-body>
+</addapptable-card>

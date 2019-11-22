@@ -1,0 +1,26 @@
+<addapptable-card>
+  <!-- HEADER -->
+  <addapptable-card-header>
+    <addapptable-card-header-linear>
+      <addapptable-card-title>
+        <span>{{'alert.customButtons' | translate}}</span>
+      </addapptable-card-title>
+    </addapptable-card-header-linear>
+  </addapptable-card-header>
+  <!-- / HEADER -->
+
+  <!-- BODY -->
+  <addapptable-card-body>
+    <button type="button" mat-raised-button color="primary" (click)="openDialog()">Alert custom buttons</button>
+  </addapptable-card-body>
+  <!-- / BODY -->
+</addapptable-card>
+
+<!-- CUSTOM BUTTONS TEMPLATE -->
+<ng-template>
+  <div class="alert-buttons">
+    <button type="button" mat-button (click)="closeModal('yes')">Yes</button>
+    <button type="button" mat-button (click)="closeModal('no')">No</button>
+  </div>
+</ng-template>
+<!-- / CUSTOM BUTTONS TEMPLATE -->

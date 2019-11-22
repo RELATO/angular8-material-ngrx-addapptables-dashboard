@@ -1,0 +1,20 @@
+<div class="page d-flex flex-row justify-content-start align-items-start">
+    <app-menu class="layout-menu d-flex"></app-menu>
+    <div class="layout-main d-flex flex-column flex-wrap justify-content-start align-content-start">
+        <app-progress-bar></app-progress-bar>
+        <div class="layout-col layout-col-navbar">
+            <app-toolbar></app-toolbar>
+        </div>
+        <div addapptablesPerfectScrollbar class="layout-col layout-col-router">
+            <addapptable-container>
+                <div class="col-12">
+                    <router-outlet></router-outlet>
+                </div>
+            </addapptable-container>
+        </div>
+        <app-configuration></app-configuration>
+        <div class="layout-footer">
+            <a href="https://github.com/addapptables/ng-template" type="button" target="_blank" mat-raised-button color="accent">Free Download</a>
+        </div>
+    </div>
+</div>

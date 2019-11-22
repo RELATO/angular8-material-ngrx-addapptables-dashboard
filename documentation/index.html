@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Encoding Meta -->
+  <meta charset="UTF-8" />
+  <!-- IE Compatibility Meta -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Meta Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Title -->
+  <title>Addapptables</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Main Style -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Icon -->
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- Start SideBar -->
+  <nav class="sidebar navbar">
+    <div class="sidebar-header">
+      <h2>Addapptables Template</h2>
+    </div>
+    <ul class="nav">
+      <li class="active"><a href="#getting-started">getting started</a></li>
+      <li><a href="#theme-server">Run server</a></li>
+      <li><a href="#theme-production">Build production</a></li>
+      <li><a href="#theme-directory-structure">Directory structure</a></li>
+      <li><a href="#multi-language">Multi language</a></li>
+      <li><a href="#components">Components</a></li>
+    </ul>
+  </nav>
+  <!-- End SideBar -->
+  <!-- Start Page Content -->
+  <div class="content">
+    <!-- Start Getting-Started -->
+    <section id="getting-started">
+      <h1>Addapptables Angular 7 Template</h1>
+      <h4>thank you for downloading Addapptables template</h4>
+      <p>If you have any questions, feel free to email me via my user page with the contact form <a
+          href="https://addapptablestheme.com/contact-us" target="_blank">Here</a></p>
+      <h2>getting started</h2>
+      <h5>how to start :</h5>
+      <p><b>step 1</b> - Unzip the zip file that you have downloaded from Addapptablestheme. Inside the zip file, you will find the Skeleton Project (addapptables-x.x.x-skeleton.zip) along with the Demo Project (addapptables-x.x.x-demo.zip)</p>
+      <p><b>step 2</b> - For this documentation, we will be using the Skeleton Project which is the exact same template minus the demo content so you don't have to clean up the demo content.</p>
+      <p><b>step 3</b> - Extract the contents of the zip file (addapptables-x.x.x-skeleton.zip) into a folder that you will work within. For this documentation, we will refer that as "your work folder".</p>
+      <h2>Dependencies :</h2>
+      <p><b>step 1</b> - <a href="https://angular.io/" target="_blank">Angular</a> is the core of Addapptables.</p>
+      <p><b>step 2</b> - <a href="https://material.angular.io/" target="_blank">Angular Material</a>  is the primary UI library of the Addapptables.
+        It's a set of Angular components, directives and services that implements Material Design Specifications and it's in active development by Google.</p>
+      <p><b>step 3</b> - <a href="https://github.com/angular/angular-cli" target="_blank">Angular Cli</a>  is a tool to initialize, develop,
+        scaffold and maintain Angular applications. You can find more information about at: angular-cli</p>
+      <h2>installation</h2>
+      <h5>how to install :</h5>
+       <p><b>step 1</b> - Install Nodejs <a href="https://nodejs.org/es/" target="_blank">link</a><br /></p>
+        <p><b>step 2</b> - Open terminal and type npm install -g @angular/cli<br />
+        </p>
+        <p><b>step 3</b> - Open terminal and navigate into your work folder, run the following command and wait for it to finish <b>npm install</b></p>
+        <p><b>step 4</b> - Type npm start
+        </p>
+        <h2>fonts</h2>
+        <p>This template uses google fonts, you can change the fonts for the paragraph or the headings</p>
+        <p><b>step 1</b> - Go to google fonts <a href="https://fonts.google.com" target="_blank">Here</a> and find a
+          font
+          you like.</p>
+        <p><b>step 2</b> - Change font in the index.html file</p>
+        <img src="images/fonts-1.png" class="img-responsive" alt="fonts-1" />
+        <p><b>step 3</b> - Change lines 28 with your new font in the style.scss file</p>
+        <img src="images/fonts-2.png" class="img-responsive" alt="fonts-2" />
+        <h2>icons</h2>
+        <p>This template uses <a href="https://material.io/tools/icons/?style=baseline" target="_blank">Material icons</a>, you can change
+          any of the icons.</p>
+        <p><b>step 1</b> - Go to Material icons <a href="https://material.io/tools/icons/?style=baseline" target="_blank">Here</a> and find an icon you
+          like but make sure to leave any extra classes you find in the Index.html file.</p>
+        <p><b>step 2</b> - Change the icon in the component file</p>
+    </section>
+    <!-- End Getting-Started -->
+
+    <!-- Start server -->
+    <section id="theme-server">
+      <h2>Server</h2>
+      <h5>how to run:</h5>
+      <p><b>Step 1</b> While still in your work folder, run the following command in the console application:<b>npm start</b> </p>
+      <p>
+        And that's it. Angular CLI will take care everything and start the Addapptables.
+        You can check out your console application to get further information about the server. By default, it will run on http://localhost:4200 but it might change depending on your setup.
+        Also, there are other commands available in Addapptables which may help you in your development. To see the complete list of available npm commands, check the package.json file.
+      </p>
+      <img src="images/server.png" class="img-responsive" alt="navbar-logo" />
+      <p><b>Reloading the Server</b> The ng serve command will watch your files and reload the page for you as you make changes. But for some reason,
+        if you need to manually restart the server, you can do it by pressing Ctrl + C on your keyboard while in the console application and then
+        run the following command once again:<b>npm start</b> </p>
+    </section>
+    <!-- End server -->
+
+    <!-- Start production -->
+    <section id="theme-production">
+      <h2>Production</h2>
+      <h5>Build :</h5>
+      <p>The following command builds the application into an output directory: <b>ng build</b> <br />
+      The build artifacts will be stored in the /dist directory. All commands that build or serve your project, will delete the output directory.</p>
+      <h5>Bundling & Tree-Shaking (AoT) :</h5>
+      <p>To build your app with AoT (Ahead of Time) compiler, use the following command: <b>ng build</b> <br />
+      or if you want to serve with AoT, use the following: <b>ng serve --prod</b><br />
+        This will make use of uglifying and tree-shaking functionality while serving the app from the memory.
+      </p>
+      <h5>Running unit tests</h5>
+      <p><b>ng test</b>  Tests will execute after a build is executed via Karma, and it will automatically watch your files for changes. <br />
+      </p>
+      <h5>Running end-to-end tests</h5>
+      <p><b>ng e2e</b> Before running the tests make sure you are serving the app via ng serve. End-to-end tests are run via Protractor. <br />
+      </p>
+      <p>For more information about angular-cli commands, check the <a href="https://github.com/angular/angular-cli" target="_blank">Angular cli</a>.</p>
+    </section>
+    <!-- End production -->
+
+    <!-- Start Directory Structure -->
+    <section id="theme-directory-structure">
+      <h2>Directory structure</h2>
+      <p>Addapptables has a fairly simple directory structure. All source code that you will need stays inside the /src folder.
+        Once you build your app, a /dist folder will appear at the root which will contain the built app. You can simply upload the contents of it to your server to start running your app.</p>
+
+      <h5>Source directory (/src)</h5>
+      <p>The source folder has the general Angular CLI project structure along with an additional folder called /@addapptable which contains the core elements of the Addapptables.
+      </p>
+      <h5>/app</h5>
+      <p>
+        This folder contains the AppComponent along with the following directories. Everything that being contained inside these folders are belong to your app and you can edit them however you like while building your app:
+        <ul>
+          <li>
+            /@redux: Store files.
+          </li>
+          <li>
+            /admin: Pages and page layouts.
+          </li>
+          <li>
+            /auth: Authorization pages.
+          </li>
+          <li>
+            /localication: <a href="https://github.com/ngx-translate/core" target="_blank">ngx-translate</a> i18n
+          </li>
+          <li>
+            /shared: shared components
+          </li>
+        </ul>
+      </p>
+    </section>
+    <!-- End production -->
+
+    <!-- Start multi language -->
+    <section id="multi-language">
+      <h2>Multi language</h2>
+      <p>Addapptables uses ngx-translate module and supports multiple languages and translations.</p>
+      <h5>
+        Usage
+      </h5>
+      <p>
+        In order to use the translations, create your translation file within the module you want to use the translations. For example, for the menu app, create assets/i18n/en.json file.
+        The structure of the translation file is important it must define the translation data:
+        <img src="images/translation.png" class="img-responsive" alt="translation" />
+      </p>
+    </section>
+    <!-- End components -->
+
+    <!-- Start components -->
+    <section id="components">
+      <h2>Components</h2>
+      <p>Addapptables has created several components for the use of the community. You can see these components with the following links</p>
+      <ul class="list-unstyled">
+        <li><a href="https://github.com/addapptables/menu-admin-ui" target="_blank">Addapptables menu</a></li>
+        <li><a href="https://github.com/addapptables/core-ui" target="_blank">Addapptables core</a></li>
+        <li><a href="https://github.com/addapptables/modal-ui" target="_blank">Addapptables modal</a></li>
+        <li><a href="https://github.com/addapptables/perfect-scrollbar-ui" target="_blank">Addapptables perfect-scrollbar</a></li>
+        <li><a href="https://github.com/addapptables/responsive-ui" target="_blank">Addapptables responsive</a></li>
+        <li><a href="https://github.com/addapptables/notifier-ui" target="_blank">Addapptables notifier</a></li>
+        <li><a href="https://github.com/addapptables/alert-ui" target="_blank">Addapptables alert</a></li>
+        <li><a href="https://github.com/addapptables/card-ui" target="_blank">Addapptables card</a></li>
+        <li><a href="https://github.com/addapptables/ngrx-actions" target="_blank">Addapptables ngrx-actions</a></li>
+      </ul>
+    </section>
+    <!-- End components -->
+  </div>
+  <!-- End Page Content -->
+  <!-- Jquery -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Custom Js -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

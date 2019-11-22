@@ -1,0 +1,6 @@
+<div class="report-week">
+  <ngx-charts-bar-vertical [scheme]="colorScheme" [results]="reportData$ | async" [gradient]="false" [xAxis]="true"
+    [yAxis]="true" [legend]="true" [barPadding]="barPadding" [showXAxisLabel]="true" [showYAxisLabel]="true"
+    [xAxisLabel]="'report.week' | translate" [yAxisLabel]="'report.earning' | translate">
+  </ngx-charts-bar-vertical>
+</div>

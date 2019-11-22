@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+    <app-earning></app-earning>
+  </div>
+  <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+    <app-cost></app-cost>
+  </div>
+  <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+    <app-subtotal></app-subtotal>
+  </div>
+  <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+    <app-total></app-total>
+  </div>
+  <div class="col-12">
+    <addapptable-card>
+      <addapptable-card-header>
+        <addapptable-card-header-oval>
+          <addapptable-card-title>
+            <mat-icon matSuffix>bar_chart</mat-icon>
+            <span>{{'report.ofWeek' | translate}}</span>
+          </addapptable-card-title>
+        </addapptable-card-header-oval>
+      </addapptable-card-header>
+      <addapptable-card-body>
+        <app-report-week></app-report-week>
+      </addapptable-card-body>
+    </addapptable-card>
+  </div>
+</div>

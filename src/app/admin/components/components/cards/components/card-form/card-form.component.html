@@ -1,0 +1,34 @@
+<form #form class="form-full-width">
+  <!-- FOOD FIELD -->
+  <mat-form-field>
+    <input ngModel #food="ngModel" name="food" matInput [placeholder]="'form.general.food' | translate" value="Sushi"
+      required>
+    <mat-error *ngIf="food.invalid">You must enter a value</mat-error>
+  </mat-form-field>
+  <!-- / FOOD FIELD -->
+
+  <!-- COMMENT FIELD -->
+  <mat-form-field>
+    <textarea ngModel #comment="ngModel" name="comment" matInput [placeholder]="'form.general.comment' | translate"
+      required></textarea>
+    <mat-error *ngIf="comment.invalid">You must enter a value</mat-error>
+  </mat-form-field>
+  <!-- / COMMENT FIELD -->
+
+  <!-- OPTION FIELD -->
+  <mat-radio-group>
+    <mat-radio-button value="1">{{'general.option' | translate}} 1</mat-radio-button>
+    <mat-radio-button value="2">{{'general.option' | translate}} 2</mat-radio-button>
+  </mat-radio-group>
+  <!-- / OPTION FIELD -->
+
+  <!-- CHECKBOX FIELD -->
+  <section class="form-checkbox">
+    <mat-checkbox [checked]="true">{{'form.general.checked' | translate}}</mat-checkbox>
+    <mat-checkbox>{{'form.general.indeterminate' | translate}}</mat-checkbox>
+  </section>
+  <!-- / CHECKBOX FIELD -->
+  <div class="form-button">
+    <button type="submit" mat-raised-button color="accent">Accent</button>
+  </div>
+</form>

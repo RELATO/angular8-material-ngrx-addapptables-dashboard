@@ -1,0 +1,50 @@
+
+body {
+  background-color: map-get($addapptable-theme-variables, gray-lighter);
+  color: map-get($addapptable-theme-variables, gray);
+}
+
+@mixin general($variables) {
+
+  mat-form-field {
+    color: map-get($variables, gray-color);
+  }
+
+  .page {
+      position: relative;
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      z-index: 1;
+      min-width: 0;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  h5 {
+    color: map-get($variables, gray-lighter) !important;
+  }
+
+  h1, h2, h3, h4, h5, h6{
+    margin: 0;
+  }
+
+  .mat-button-focus-overlay{
+    background-color: map-get($variables, gray-light) !important;
+  }
+
+  .text-dots {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+
+  button:focus{
+    outline: none;
+  }
+}

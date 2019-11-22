@@ -1,0 +1,68 @@
+:host {
+    display: flex;
+    flex: 1;
+    background: url(/assets/images/backgrounds/background_addapptables.jpg) 0 0/cover no-repeat
+}
+
+.login {
+    flex: 1;
+    &-form {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        &-input{
+            display: flex;
+            flex-direction: column;
+            mat-form-field{
+                flex: 1;
+                width: 100%
+            }
+        }
+    }
+    &-actions{
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: space-between;
+        > a {
+            color: #039be5;
+        }
+    }
+    &-other-buttons{
+        flex-direction: column;
+        box-sizing: border-box;
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        margin: 1em;
+        &>button{
+            margin: 0.5em;
+            width: 70%;
+        }
+    }
+    &-separator{
+        color: rgba(0,0,0,.12);
+        font-size: 1.5em;
+        font-weight: 600;
+        margin: 24px auto;
+        position: relative;
+        overflow: hidden;
+        width: 100px;
+        text-align: center;
+    }
+    &-google {
+        background-color: #d73d32 !important;
+        color: white !important
+    }
+    &-facebook{
+        background-color: #3f5c9a !important;
+        color: white !important;
+    }
+    &-logo{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        & > img {
+            width: 30%;
+        }
+    }
+}

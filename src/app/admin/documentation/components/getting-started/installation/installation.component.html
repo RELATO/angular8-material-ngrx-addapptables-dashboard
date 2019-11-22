@@ -1,0 +1,66 @@
+<addapptable-card>
+  <addapptable-card-header>
+    <addapptable-card-header-oval>
+      <addapptable-card-title>
+        <mat-icon matSuffix>library_books</mat-icon>
+        <span>{{'documentation.installation' | translate}}</span>
+      </addapptable-card-title>
+    </addapptable-card-header-oval>
+  </addapptable-card-header>
+  <addapptable-card-body>
+    <div class="addapptable-group">
+      <h3 class="addapptable-title text-accent">
+        {{ 'documentation.title.prerequisites' | translate }}
+      </h3>
+      <p>{{ 'documentation.prerequisites.description' | translate }}.</p>
+    </div>
+    <div class="addapptable-group">
+      <h3 class="addapptable-title text-accent">
+        Angular cli
+      </h3>
+      <p>
+        {{ 'documentation.prerequisites.angularCli' | translate }}
+        <a href="https://cli.angular.io/" target="_blank" rel="noopener noreferrer">Angular cli</a>.
+      </p>
+    </div>
+    <div class="addapptable-group">
+      <h3 class="addapptable-title text-accent">
+        Nodejs
+      </h3>
+      <p>
+        {{ 'documentation.prerequisites.nodejs' | translate }}
+        <a href="https://nodejs.org/es/" target="_blank" rel="noopener noreferrer">Nodejs</a>.
+      </p>
+    </div>
+    <div class="addapptable-group">
+      <h3 class="addapptable-title text-accent">
+        {{'documentation.installation' | translate}}
+      </h3>
+      <p>
+        <mat-list>
+          <mat-list-item>1. {{'documentation.prerequisites.download.nodejs' | translate}} </mat-list-item>
+          <mat-list-item class="installation-list-items">
+            <p matLine>
+              2. {{'documentation.prerequisites.download.angularcli' | translate}}
+            </p>
+            <markdown ngPreserveWhitespaces matLine>
+              ```terminal
+              npm install -g @angular/cli
+              ```
+            </markdown>
+          </mat-list-item>
+          <mat-list-item class="installation-list-items">
+            <p matLine>
+              3. {{'documentation.prerequisites.run' | translate}}
+            </p>
+            <markdown ngPreserveWhitespaces matLine>
+              ```terminal
+              npm install
+              ```
+            </markdown>
+          </mat-list-item>
+        </mat-list>
+      </p>
+    </div>
+  </addapptable-card-body>
+</addapptable-card>

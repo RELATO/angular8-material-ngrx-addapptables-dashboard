@@ -1,0 +1,11 @@
+<button type="button" mat-button [matMenuTriggerFor]="profileMenu">
+  <mat-icon matSuffix>person</mat-icon>
+</button>
+
+<mat-menu #profileMenu="matMenu" [overlapTrigger]="false">
+  <button type="button" mat-menu-item>
+    <span>
+      {{ 'profile.closeSession' | translate }}
+    </span>
+  </button>
+</mat-menu>

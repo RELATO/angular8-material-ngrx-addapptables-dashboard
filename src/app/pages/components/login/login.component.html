@@ -1,0 +1,37 @@
+<div class="d-flex flex-row login">
+  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 login-form">
+    <div class="container-fluid">
+      <h2>{{'login.title' | translate}}</h2>
+      <form class="login-form-input justify-content-center">
+        <mat-form-field>
+          <input matInput [placeholder]="'login.email' | translate">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput [placeholder]="'login.password' | translate">
+        </mat-form-field>
+        <div class="login-actions">
+          <mat-checkbox>{{'login.remember' | translate}}</mat-checkbox>
+          <a>
+            {{'login.forgotYourPassword' | translate}}
+          </a>
+        </div>
+        <button type="submit" mat-raised-button color="primary">{{'login.title' | translate}}</button>
+        <div class="login-separator">
+          <span class="login-separator-text">
+            {{'login.or' | translate}}
+          </span>
+        </div>
+        <div class="login-other-buttons">
+          <button type="submit" mat-raised-button class="login-google">Google</button>
+          <button type="submit" mat-raised-button class="login-facebook">Facebook</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="d-none d-sm-flex col-sm-6 col-md-6 col-lg-8 col-xl-9 login-logo">
+    <img src="assets/images/logo/addaptables.svg">
+    <h1 class="title d-none d-lg-flex">
+      ADDAPPTABLES
+    </h1>
+  </div>
+</div>

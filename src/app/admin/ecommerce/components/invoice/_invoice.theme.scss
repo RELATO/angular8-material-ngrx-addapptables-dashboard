@@ -1,0 +1,15 @@
+@import './components/invoice-header/invoice-header.theme';
+@import './components/invoice-client/invoice-client.theme';
+@import './components/invoice-total/invoice-total.theme';
+
+@mixin addapptable-invoice {
+    .invoice {
+        @include invoice-header();
+        @include invoice-client();
+        @include invoice-total();
+        addapptable-card {
+            margin-top: 0.8em;
+        }
+    }
+}
+
